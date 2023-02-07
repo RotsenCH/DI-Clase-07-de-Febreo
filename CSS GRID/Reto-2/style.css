@@ -1,0 +1,29 @@
+.contenedor {
+    display: grid; /*Hacer que se haga grilla*/
+    background-color: rgba(165, 42, 42, 0.493);
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px; 
+    grid-auto-flow: column;
+    width: 450px;
+    justify-content: center;
+    gap: 50px 50px
+
+}
+
+.item{
+    position: relative;
+    background-color: #add901;
+    font-size: 4rem;
+}
+
+.item span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    justify-content: flex-end;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    background-color: darkgreen;
+    width: 80px;
+    height: 100px;
+}

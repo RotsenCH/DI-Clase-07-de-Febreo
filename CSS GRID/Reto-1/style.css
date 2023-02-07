@@ -1,0 +1,40 @@
+.contenedor {
+    display: grid; /*Hacer que se haga grilla*/
+    grid-template-rows: 200px 200px 200px ;
+    grid-auto-columns: 200px; 
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item{
+    position: relative;
+    background-color: #add901;
+    font-size: 4rem;
+}
+
+.item:nth-child(2),
+.item:nth-child(5){
+    background-color: rgb(34, 148, 34);
+}
+
+.item:nth-child(3),
+.item:nth-child(6){
+    background-color: darkgreen;
+}
+
+.item span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px;
+    font-size: 4pem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: darkgreen;
+}
+
+.item:nth-child(3) span,
+.item:nth-child(6) span{
+    background-color: rgba(165, 42, 42, 0.37);
+}
